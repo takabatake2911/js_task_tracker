@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .card {
+                font-size: 30px;
+                padding: 2% 3%;
+                margin: 20px 50px;
+                background-color: rgb(221, 221, 221);
+                border: 1px solid black;
+            }
+            .card-text {
+                margin: 0;
+            }
+            .date-text {
+                margin: 0;
+            }
+            .favorite {
+                background-color: orange;
+            }
+            .fav-btn {
+                display: inline-block;
+                margin: 0;
+                border-radius: 5px;
+            }
+            .del-btn {
+                display: inline-block;
+                margin: 0;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <div>
+                <label for="entry-box">タスクを入力</label>
+                <input type="text" name="entry-box" id="entry-box" />
+                <input type="date" name="date-control" id="date-control" />
+                <input type="submit" value="追加" id="submit-btn" />
+            </div>
+        </form>
+        <div id="root"></div>
+    </body>
+    <script src="index.js"></script>
+</html>
